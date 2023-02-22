@@ -1,5 +1,13 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
+import { ChatAppProvider } from "context/ChatAppContext";
+import { BrowserRouter } from "react-router-dom";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    <ChatAppProvider>
+      {" "}
+      <Component {...pageProps} />
+    </ChatAppProvider>
+  );
 }
+export default App;
