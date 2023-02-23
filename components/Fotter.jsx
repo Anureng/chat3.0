@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedinIn, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 function Fotter() {
     return (
         <div className='flex flex-col justify-center items-center text-2xl space-y-8 h-32 bg-blue-600'>
