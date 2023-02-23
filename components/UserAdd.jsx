@@ -16,7 +16,7 @@ function UserAdd() {
                     <button onClick={()=>createAccount({name})}className="px-2 py-1 bg-blue-900 rounded-xl border border-black ml-2">submit</button>
                 </div>
                 <div>
-                    <Image src="/Home.png" width={500} height={500} />
+                    <Image src="/Home.png" alt='homeImage' width={500} height={500} />
                 </div>
             </div>
             <div>{

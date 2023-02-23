@@ -14,7 +14,7 @@ const Card = ({ readMessage, el, i, readUser }) => {
         query: { name: `${el.name}`, address: `${el.pubkey}` },
       }}
     >
-      <div className="border border-black"
+      <div className="border border-black p-8 rounded-xl"
         onClick={() => (readMessage(el.pubkey), readUser(el.pubkey))}
       >
         <div >
@@ -31,7 +31,7 @@ const Card = ({ readMessage, el, i, readUser }) => {
           </div>
         </div>
       </div>
-      <chat pubkey={el.pubkey}/>
+
     </Link>
   );
 };

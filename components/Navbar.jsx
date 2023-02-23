@@ -16,7 +16,7 @@ function Navbar() {
                         : (
                             <div>
                                 <button>
-                                    <a href='https://metamask.io/' target={"_blank"} >
+                                    <a href='https://metamask.io/' rel="noreferrer" target={"_blank"} >
                                         Install Metamask</a>
                                 </button>
                             </div>

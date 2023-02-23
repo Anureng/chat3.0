@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CheckIfWalletConnected, connectingWithContract, ConnectWallet } from '../utils/apiFeature';
+import { connectingWithContract, ConnectWallet } from '../utils/apiFeature';
 
 export const ChatAppContect = React.createContext();
 
@@ -122,7 +122,6 @@ const readmessage=await contract.readMessage()
             createAccount,
             addFriend,
             sendMessage,
-            CheckIfWalletConnected,
             connectingWithContract,
             ConnectWallet,
             readUser,

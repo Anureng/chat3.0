@@ -32,15 +32,12 @@ const SendMessage = () => {
             <input type="text" placeholder='enter msg'  onChange={(e)=>setMsg(e.target.value)} />
             <button  onClick={()=>sendMessage({address,msg})}>Send message</button> */}
             <ToastContainer />
-            {friendLists.map((el, i) => (
+         
             <ReadMessage
-              key={i + 1}
-              el={el}
-              i={i}
               readMessage={readMessages}
               readUser={readUser}
             />
-          ))}
+   
         </div>
     )
 }

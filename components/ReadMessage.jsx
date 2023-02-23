@@ -20,11 +20,11 @@ function ReadMessage({ el, i, readUser}) {
 
 
   return (
-  
+<div className='flex  flex-col items-center justify-center p-8'>
 
-<div>
-      <div className='border border-black'>
-        <div>
+  <p className='text-xl font-bold'>{username} FrienList</p>
+      <div className='border border-black flex items-center justify-evenly p-8 space-x-10 rounded-xl'>
+        <div className='text-xl p-8'>
           {friendLists.map((el, i) => (
             <Card
               key={i + 1}
@@ -35,7 +35,7 @@ function ReadMessage({ el, i, readUser}) {
             />
           ))}
         </div>
-        <div>
+        <div className='text-xl '>
           <Chat
             functionName={sendMessage}
             readMessage={readMessages}

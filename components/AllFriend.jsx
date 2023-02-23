@@ -5,7 +5,7 @@ const AllFriend = () => {
   const {friendLists} = useContext(ChatAppContect)
   
   return (
-   <div>{friendLists}</div>
+   <div></div>
   )
 }
 

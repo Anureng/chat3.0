@@ -11,7 +11,7 @@ function AllUser() {
             </div>
             <div className='flex flex-wrap space-x-10  space-y-10 items-center justify-center mt-2' >
                 {userLists.map((el)=>(
-                <div className='border flex flex-col  rounded-xl items-center border-black  px-2 py-1 text-lg ' >
+                <div key={el.id} className='border flex flex-col  rounded-xl items-center border-black  px-2 py-1 text-lg ' >
                 <div key={el.id} className="">
                 {el.name}
                 </div>  
